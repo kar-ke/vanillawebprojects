@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the tab component which use to show multiple components at same area.">
+    <meta name="keywords" content="tabs, navigation, contents">
+    <meta name="author" content="karthik">
+
+    <title>Tabs</title>
+
+    <!-- styles  -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- script  -->
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <section class="tabs-section">
+        <h1>Tabs Component</h1>
+        <div class="tabs-container">
+            <ul class="tab-titles-container">
+                <li data-tab-target="#html">Html</li>
+                <li data-tab-target="#css">Css</li>
+                <li data-tab-target="#js">Javascript</li>
+            </ul>
+
+            <div>
+                <div id="html" data-tab-content class="active">
+                    <p> <strong>>> HyperText Markup Language</strong> is the standard markup language for documents 
+                        designed to be displayed in a web browser.It defines the content and structure 
+                        of web content. It is often assisted by technologies such as Cascading Style 
+                        Sheets and scripting languages such as JavaScript.</p>
+                </div>
+                <div id="css" data-tab-content>
+                    <p><strong>>> Cascading Style Sheets</strong> is a style sheet language used for specifying the
+                        presentation and styling of a document written in a markup language such as HTML 
+                        or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+                </div>
+                <div id="js" data-tab-content>
+                    <p><strong>>> JavaScript</strong>, often abbreviated as JS, is a programming language and core 
+                        technology of the Web, alongside HTML and CSS. 99% of websites use JavaScript 
+                        on the client side for webpage behavior. Web browsers have a dedicated JavaScript 
+                        engine that executes the client code.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
