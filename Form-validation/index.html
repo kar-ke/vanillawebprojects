@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="keywords" content="form, validation, example" />
+		<meta name="description" content="This is a example output of Form validation" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="karthik" />
+		<title>Form validation</title>
+
+		<!-- box icons  -->
+		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+		<!-- styles  -->
+		<link rel="stylesheet" href="./styles.css" />
+	</head>
+	<body>
+		<section class="form-section">
+			<form id="form">
+				<h1>Sign up</h1>
+				<div class="form-control">
+					<label for="username">Username</label>
+					<input id="username" type="text" name="username" />
+					<i class="bx bx-check-circle" style="color:#00ff36"></i>
+					<i class="bx bxs-error-circle" style="color:#ff0000"></i>
+					<small>Enter valid</small>
+				</div>
+				<div class="form-control">
+					<label for="email">Email</label>
+					<input id="email" type="email" name="email" />
+					<i class="bx bx-check-circle" style="color:#00ff36"></i>
+					<i class="bx bxs-error-circle" style="color:#ff0000"></i>
+					<small>Enter valid</small>
+				</div>
+				<div class="form-control">
+					<label for="password">Password</label>
+					<input id="password" type="password" name="password" />
+					<i class="bx bx-check-circle" style="color:#00ff36"></i>
+					<i class="bx bxs-error-circle" style="color:#ff0000"></i>
+					<small>Enter valid</small>
+				</div>
+				<div class="form-control">
+					<label for="password2">Password again</label>
+					<input id="password2" type="password" name="password2" />
+					<i class="bx bx-check-circle" style="color:#00ff36"></i>
+					<i class="bx bxs-error-circle" style="color:#ff0000"></i>
+					<small>Enter valid</small>
+				</div>
+				<button type="submit">Sign up</button>
+			</form>
+		</section>
+
+		<!-- script  -->
+		<script src="./script.js"></script>
+	</body>
+</html>
