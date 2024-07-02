@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+ul li {list-style: none;}
+
+.accordion-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+    background-color: brown;
+}
+
+.accordion-container{
+    max-width: 500px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+
+.title{
+    cursor: pointer;
+    padding: 10px 0;
+    border-bottom: 2px solid grey;
+    margin-bottom: 10px;
+}
+
+.description{
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.accordion-item.active .description{
+    height: 80px;
+}
