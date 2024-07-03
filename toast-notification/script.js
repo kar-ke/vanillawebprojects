@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (document.querySelector('.toast-container').classList.contains('active')) {
                 document.querySelector('.toast-container').classList.toggle('active');
             }
-        }, 5000);
+        }, 3000);
     });
     
     document.querySelector('.close-icon').addEventListener('click', () => {
