@@ -5,34 +5,153 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: monospace;
     font-size: 15px;
-    color: white;
+}
+body::-webkit-scrollbar {
+    display: none;
 }
 
+
+/* analog clock  */
+.analog-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 100vh;
+    background-color: #405D72;
+}
+
+.analog{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 50%;
+    position: relative;
+}
+
+.analog::after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.number{
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    position: absolute;
+    text-align: center;
+}
+
+.number1{ transform: rotate(30deg); }
+.number2{ transform: rotate(60deg); }
+.number3{ transform: rotate(90deg); }
+.number4{ transform: rotate(120deg); }
+.number5{ transform: rotate(150deg); }
+.number6{ transform: rotate(180deg); }
+.number7{ transform: rotate(210deg); }
+.number8{ transform: rotate(240deg); }
+.number9{ transform: rotate(270deg); }
+.number10{ transform: rotate(300deg); }
+.number11{ transform: rotate(330deg); }
+.number12{ transform: rotate(360deg); }
+
+
+.needle{
+    --rotation : 0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: bottom;
+    transform: rotate(calc(var(--rotation)*1deg));
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%; 
+    z-index: 8;
+}
+
+.second{
+    width: 3px;
+    height: 35%;
+    background-color: red;
+}
+.minute{
+    width: 5px;
+    height: 35%;
+    background-color: black;
+}
+
+.hour{
+    width: 8px;
+    height: 30%;
+    background-color: black;
+}  
+
+
+
+/* digital clock  */
+.clock-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 100vh;
+    background-color: #95D2B3;
+    color: #275f54;
+    font-family: monospace;
+}
+
+.digital-clock-container{
+    width: 250px;
+    height: 100px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0 black;
+}
+
+.clock{
+    font-size: 30px;
+    line-height: 3;
+}
+
+
+
+/* New year count down  */
 .app-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    height: 100vh;
     width: 100vw;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./bg.jpg');
-    background-size: cover;
-}
-
-.event-name{
-    font-family: monospace;
-    color: black;
+    height: 100vh;
+    background-color: #836FFF;
+    color: #211951;
 }
 
 small{
-    font-size: 10px;
+    font-size: 12px;
 }
 time{
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 900;
 }
 
 .clock-container{
@@ -40,7 +159,11 @@ time{
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    width: 200px;
+    width: 250px;
     height: 100px;
+    padding: 0 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0 black;
 }
-

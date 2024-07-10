@@ -3,18 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is an Countdown timer app, we can use it to set it to remaind any special occasions.">
-    <meta name="keywords" content="timer, app, countdown">
+    <meta name="description" content="This is an collection of time related projects on vannila javascript.">
+    <meta name="keywords" content="timer, app, countdown, clock, digital, analog">
     <meta name="author" content="karthikeyan ramesh">
-    <title>Countdown Timer</title>
+    <title>Time Projects</title>
 
     <!-- styles  -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- analog clock  -->
+    <section class="analog-section">
+        <h2>Analog Clock</h2>
+        <div class="analog">
+            <div class="needle hour"></div>
+            <div class="needle minute"></div>
+            <div class="needle second"></div>
+
+            <div class="number number1">1</div>
+            <div class="number number2">2</div>
+            <div class="number number3">3</div>
+            <div class="number number4">4</div>
+            <div class="number number5">5</div>
+            <div class="number number6">6</div>
+            <div class="number number7">7</div>
+            <div class="number number8">8</div>
+            <div class="number number9">9</div>
+            <div class="number number10">10</div>
+            <div class="number number11">11</div>
+            <div class="number number12">12</div>
+        </div>
+    </section>
+
+
+    <!-- Digital clock  -->
+    <section class="clock-section">
+        <h2>Digital Clock</h2>
+        <div class="digital-clock-container">
+            <time class="clock">12:34:23 AM</time>
+        </div>
+    </section>
+
+
+    <!-- New year countdown  -->
     <section class="app-container" role="timer">
         <div class="event-name">
-            <h1>New Year in</h1>
+            <h1>New Year countdown</h1>
         </div>
         <div class="clock-container">
             <div>
@@ -35,6 +70,8 @@
             </div>
         </div>
     </section>
+
+    
 
     <!-- script  -->
     <script src="script.js"></script>
