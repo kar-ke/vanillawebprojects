@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+ul li { list-style: none;}
+a{ text-decoration: none;}
+
+.drag-container{
+    height: 100vh;
+    background-image: url('./assets/bg-black.jpg');
+    background-size: cover;
+    filter: contrast(1.5);
+    overflow: hidden;
+}
+
+
+.element{
+    width: 250px;
+    height: 200px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border-top: 40px solid rgb(159, 255, 245);
+    padding: 20px;
+    cursor: pointer;
+    position: fixed;
+}
